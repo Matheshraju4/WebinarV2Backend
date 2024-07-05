@@ -85,6 +85,7 @@ export async function verifyRazorpay(
           data: {
             paymentId: payment_id,
             signature: signature,
+            Status: "Paid",
           },
         });
         if (updatingdatabase) {

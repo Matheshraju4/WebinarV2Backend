@@ -18,7 +18,7 @@ model User{
   phoneNumber String?
   orderId String @unique
   paymentId String?
-  Status Boolean?
+  Status String?
   id String @id @default(uuid())
   signature String?
 }
