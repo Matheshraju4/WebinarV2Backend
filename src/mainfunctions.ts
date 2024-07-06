@@ -17,7 +17,7 @@ export async function getRazorpay(
 
   if (order_Id) {
     const response = await instance.orders.create({
-      amount: 100,
+      amount: 9900,
       currency: "INR",
       receipt: order_Id,
       notes: {

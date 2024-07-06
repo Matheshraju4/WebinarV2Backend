@@ -33,4 +33,4 @@ app.post("/verify", (req, res) => __awaiter(void 0, void 0, void 0, function* ()
     const response = yield (0, mainfunctions_1.verifyRazorpay)(order_id, payment_id, signature, order_idServer);
     res.send(response);
 }));
-app.listen(3000, () => console.log("listening on port 3000"));
+app.listen(5002, () => console.log("listening on port 5002"));

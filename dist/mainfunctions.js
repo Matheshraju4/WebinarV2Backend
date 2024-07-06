@@ -26,7 +26,7 @@ function getRazorpay(username, email, phoneNumber) {
         const order_Id = yield create_order_id();
         if (order_Id) {
             const response = yield instance.orders.create({
-                amount: 100,
+                amount: 9900,
                 currency: "INR",
                 receipt: order_Id,
                 notes: {
@@ -93,6 +93,7 @@ function verifyRazorpay(order_id, payment_id, signature, order_idServer) {
                         data: {
                             paymentId: payment_id,
                             signature: signature,
+                            Status: "Paid",
                         },
                     });
                     if (updatingdatabase) {

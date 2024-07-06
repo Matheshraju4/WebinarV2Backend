@@ -35,4 +35,4 @@ app.post("/verify", async (req, res) => {
 
   res.send(response);
 });
-app.listen(3000, () => console.log("listening on port 3000"));
+app.listen(5002, () => console.log("listening on port 5002"));
